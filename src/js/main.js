@@ -1,3 +1,3 @@
-require('../css/main.scss');
+// This file is in charge of starting the application
 
-console.log('It works')
+import React from 'react';
