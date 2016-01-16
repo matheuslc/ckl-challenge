@@ -1,3 +1,6 @@
-body {
-  background-color: red;
-}
+@import '_resest', '_semanticgs';
+
+// Grid system config
+@column-width: 60;
+@gutter-width: 20;
+@columns: 12;
