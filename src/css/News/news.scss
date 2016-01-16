@@ -1,6 +1,33 @@
 .news-content {
+  @include column(12);
+
   @include media-query($mobile-sm-breakpoint, false) {
-    @include row();
+    @include column(6);
+  }
+
+  @include media-query($mobile-breakpoint, false) {
+    @include column(4);
+  }
+}
+
+.news-first {
+  @include column(12);
+
+  @include media-query($mobile-breakpoint, false) {
+    @include column(6);
+  }
+}
+
+.news-second,
+.news-third {
+  @include column(12);
+
+  @include media-query($mobile-sm-breakpoint, false) {
+    @include column(6);
+  }
+
+  @include media-query($mobile-breakpoint, false) {
+    @include column(3);
   }
 }
 

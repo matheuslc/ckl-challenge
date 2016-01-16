@@ -3,18 +3,14 @@
 
 .container {
   display: block;
-  max-width: 1140px;
+  max-width: 290px;
   margin: 0 auto;
 
-  @include media-query($desktop-breakpoint, false) {
-    max-width: 570px;
-  }
-
-  @include media-query($mobile-breakpoint, false) {
+  @include media-query($mobile-sm-breakpoint, false) {
     max-width: 720px;
   }
 
-  @include media-query($mobile-sm-breakpoint, false) {
-    max-width: 290px;
+  @include media-query($desktop-breakpoint, false) {
+    max-width: 1140px;
   }
 }

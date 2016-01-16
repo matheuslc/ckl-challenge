@@ -7,6 +7,7 @@ export default class News extends React.Component {
     return <div className='news container'>
       {this.props.news.map((news, index) => {
         return <SingleNews key={index}
+          position={index}
           category={news.category}
           title={news.title}
           text={news.text}

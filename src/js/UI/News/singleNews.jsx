@@ -4,15 +4,32 @@ import Author from './author.jsx';
 import classNames from 'classnames';
 
 export default class SingleNews extends React.Component {
+  positionSlug(position) {
+      switch (position) {
+        case 0:
+          return 'first'
+          break;
+        case 1:
+          return 'second';
+          break;
+        case 2:
+          return 'third';
+          break;
+        default: 'first'
+      }
+  }
+
   render() {
     let categoryClass = 'news-category ';
         categoryClass += 'category-' + this.props.category.toLowerCase();
 
-    return <article className='news-content'>
+    let news = 'news-content ';
+        news += 'news-' + this.positionSlug(this.props.position);
+
+    return <article className={news}>
       <span className={categoryClass}>{this.props.category}</span>
 
       <div className='news-img'>
-        <Image alt='Your picture description' srcSet={require('url?mimetype=image/png!../../../img/news_01@2x.png')} extra={{className:'myImg'}}/>
       </div>
 
       <header className='news-header'>
