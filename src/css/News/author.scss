@@ -1,0 +1,22 @@
+.author {
+    @include row();
+}
+
+.author-name {
+  font-size: 1.3rem;
+  line-height: 22px;
+}
+
+.author-name-primary {
+  font-family: $secondary-font;
+  color: $author-color;
+  font-style: italic;
+}
+
+.author-img {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+}

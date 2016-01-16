@@ -7,6 +7,7 @@ $desktop-breakpoint: 1170px;
 $column-width: 60;
 $gutter-width: 20;
 $columns: 12;
+$total-width: 100%;
 
 ///////////////////////////////////
 // Colors variables
@@ -17,11 +18,15 @@ $bg: #FFFFFFF;
 $menu-item-color: #3E433E;
 
 // News colors
-$news-title-color: #FF0000;
-$news-text-color: #FF6868;
+$news-title-color: #000000;
+$news-text-color: #686868;
+$category-politics-color: #FF001F;
+$category-tech-color: #4A90E2;
+$category-science-color: #7CBB37;
+$category-sports-color: #F5A623;
 
 // Author Colors
-$author-color: #FF8080;
+$author-color: #808080;
 
 ///////////////////////////////////
 // Typography variables

@@ -1,5 +1,9 @@
 @import '../Utils/_variables.scss';
 
+@function gridsystem-width($columns:$columns) {
+	@return ($column-width * $columns) + ($gutter-width * $columns);
+}
+
 // Set $total-width to 100% for a fluid layout
 $total-width: gridsystem-width($columns);
 

@@ -4,9 +4,16 @@
 @import 'Utils/_mediaQueries.scss';
 @import 'Utils/_grid.scss';
 
+@import 'News/news.scss';
+@import 'News/author.scss';
+
+html {
+  font-size: 10px;
+}
+
 body {
   margin: 0;
   background-color: $bg;
-  font-size: 10px;
+  font-size: 1.6rem;
   font-family: $default-font;
 }

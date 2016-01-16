@@ -1,0 +1,50 @@
+.news-content {
+  @include media-query($mobile-sm-breakpoint, false) {
+    @include row();
+  }
+}
+
+.news-title {
+  font-size: 1.7rem;
+  line-height: 21px;
+  font-size: 17px;
+
+  @include media-query($mobile-breakpoint, false) {
+    font-size: 29px;
+  }
+}
+
+.news-title-primary {
+  color: $news-title-color;
+}
+
+.news-text {
+  font-size: 1.4rem;
+  line-height: 22.8px;
+  font-family: $secondary-font;
+}
+
+.news-text-primary {
+  color: $news-text-color;
+}
+
+.category {
+  font-size: 1rem;
+  line-height: 22.8px;
+}
+
+.category-politics {
+  color: $category-politics-color;
+}
+
+.category-tech {
+  color: $category-tech-color;
+}
+
+.category-science {
+  color: $category-science-color;
+}
+
+.category-sports {
+  color: $category-sports-color;
+}
