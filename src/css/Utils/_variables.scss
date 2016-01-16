@@ -1,4 +1,42 @@
 // Defing variables
-@mobile-sm-breakpoint: 320px;
-@mobile-breakpoint: 750px;
-@desktop-breakpoint: 1170px;
+$mobile-sm-breakpoint: 320px;
+$mobile-breakpoint: 750px;
+$desktop-breakpoint: 1170px;
+
+// Grid System
+$column-width: 60;
+$gutter-width: 20;
+$columns: 12;
+
+///////////////////////////////////
+// Colors variables
+//////////////////////////////////
+$bg: #FFFFFFF;
+
+// Menu Colors
+$menu-item-color: #3E433E;
+
+// News colors
+$news-title-color: #FF0000;
+$news-text-color: #FF6868;
+
+// Author Colors
+$author-color: #FF8080;
+
+///////////////////////////////////
+// Typography variables
+//////////////////////////////////
+$secondary-font: 'Open Sans', sans-serif;
+$primary-font: 'Lato', sans-serif;
+$default-font: $primary-font;
+
+// Menu Typography
+$menu-font: $primary-font;
+
+// News Typography
+$category-font: $primary-font;
+$news-title-font: $primary-font;
+$news-text-font: $secondary-font;
+
+// Author Typography
+$author-font: $secondary-font;

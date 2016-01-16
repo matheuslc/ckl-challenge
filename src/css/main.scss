@@ -1,6 +1,9 @@
-@import '_resest', '_semanticgs';
+@import 'Utils/_variables.scss';
+@import 'Utils/_reset.scss';
+@import 'Grid/_semanticgs.scss';
 
-// Grid system config
-@column-width: 60;
-@gutter-width: 20;
-@columns: 12;
+body {
+  background-color: $bg;
+  font-size: 10px;
+  font-family: $default-font;
+}
