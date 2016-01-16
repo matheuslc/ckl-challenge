@@ -1,0 +1,20 @@
+@import './_mediaQueries.scss';
+@import './_variables.scss';
+
+.container {
+  display: block;
+  max-width: 1140px;
+  margin: 0 auto;
+
+  @include media-query($desktop-breakpoint, false) {
+    max-width: 570px;
+  }
+
+  @include media-query($mobile-breakpoint, false) {
+    max-width: 720px;
+  }
+
+  @include media-query($mobile-sm-breakpoint, false) {
+    max-width: 290px;
+  }
+}

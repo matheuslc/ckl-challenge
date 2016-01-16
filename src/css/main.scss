@@ -1,8 +1,11 @@
 @import 'Utils/_variables.scss';
 @import 'Utils/_reset.scss';
 @import 'Grid/_semanticgs.scss';
+@import 'Utils/_mediaQueries.scss';
+@import 'Utils/_grid.scss';
 
 body {
+  margin: 0;
   background-color: $bg;
   font-size: 10px;
   font-family: $default-font;

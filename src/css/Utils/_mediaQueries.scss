@@ -1,14 +1,14 @@
 // Mixin for media queries
-@mixin media-querie($breakpoint, $retina) {
-  @if ($retina) {
-    @media screen
+@mixin media-query($breakpoint, $retina) {
+  @if ($retina == true) {
+    @media screen and
       (max-width: $breakpoint) and
       (min-device-pixel-ratio: 2) and
       (min-resolution: 192dpi) {
         @content;
       }
   } @else {
-    @media screen (max-width: $breakpoint) {
+    @media screen and (max-width: $breakpoint) {
       @content;
     }
   }

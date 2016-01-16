@@ -1,3 +1,4 @@
+@import '../Utils/_variables.scss';
 
 // Set $total-width to 100% for a fluid layout
 $total-width: gridsystem-width($columns);
@@ -11,7 +12,6 @@ $total-width: gridsystem-width($columns);
 	    clear:both;
 	}
 }
-
 
 //////////
 // GRID //
