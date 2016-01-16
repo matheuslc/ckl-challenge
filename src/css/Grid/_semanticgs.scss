@@ -11,10 +11,14 @@ $total-width: gridsystem-width($columns);
 @mixin clearfix() {
 	*zoom:1;
 
-	&:before,
-	&:after {
-	    clear:both;
-	}
+  &:before,
+  &:after {
+      content:"";
+      display:table;
+  }
+  &:after {
+      clear:both;
+  }
 }
 
 //////////

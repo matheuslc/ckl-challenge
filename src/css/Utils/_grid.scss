@@ -2,6 +2,7 @@
 @import './_variables.scss';
 
 .container {
+  @include row();
   display: block;
   max-width: 290px;
   margin: 0 auto;

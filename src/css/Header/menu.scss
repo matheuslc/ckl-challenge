@@ -1,0 +1,19 @@
+.main-header {
+  @include clearfix();
+}
+
+.logo {
+  @include column(3);
+}
+
+.main-nav {
+  @include column(9);
+}
+
+.main-menu {
+}
+
+.main-menu-item {
+  float: right;
+  display: inline-block;
+}
