@@ -17,7 +17,7 @@
 
 .logo {
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
 
   @include media-query($desktop-breakpoint, false) {
     @include column(3)
@@ -65,9 +65,13 @@
 }
 
 .is-open {
-  visibility: visible;
-  overflow: auto;
-  height: 382px;
+  height: auto;
+
+  .main-menu {
+    visibility: visible;
+    overflow: auto;
+    height: 382px;
+  }
 }
 
 .main-menu-item {
