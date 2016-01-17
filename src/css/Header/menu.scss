@@ -1,20 +1,66 @@
 .main-header {
-  padding: 8px 0 15px;
+  position: relative;
+  padding: 7px 0 4px;
+  border-bottom: 1px solid $border-color;
   @include clearfix();
 }
 
 .logo {
-  @include column(3);
+  @include media-query($desktop-breakpoint, false) {
+    @include column(3)
+  }
 }
 
 .main-nav {
-  @include column(9);
+  width: 97%;
+  position: absolute;
+  top: 45px;
+
+  @extend .main-nav-primary;
+
+  @include media-query($desktop-breakpoint, false) {
+    @include column(9);
+    position: relative;
+    float: right;
+    top: 0;
+  }
+}
+
+.main-nav-primary {
+  background-color: $menu-bg;
+
+  @include media-query($desktop-breakpoint, false) {
+    text-align: right;
+  }
 }
 
 .main-menu {
+  padding: 35px 0;
+
+  @include media-query($desktop-breakpoint, false) {
+    padding: 0;
+  }
 }
 
 .main-menu-item {
-  float: right;
-  display: inline-block;
+  display: block;
+  padding: 31px 25px;
+
+  @extend .main-menu-item-primary;
+
+  @include media-query($desktop-breakpoint, false) {
+    display: inline-block;
+    padding: 23px 29px 0 0;
+    margin-top: -8px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $menu-item-color;
+  }
+}
+
+.main-menu-item-primary {
+  text-align: center;
+  text-transform: uppercase;
 }

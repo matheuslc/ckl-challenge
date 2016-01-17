@@ -19,6 +19,17 @@ export default class SingleNews extends React.Component {
       }
   }
 
+  getImage() {
+    if (this.props.images.image) {
+      var image = require('../../../img/' + this.props.images.image);
+      let retina = require('../../../img/menu@2x.png');
+
+      return <Image alt='Your picture description'
+        srcSet={require('../../../img/' + this.props.images.image)}
+        extra={{className:'myImg'}}/>
+    }
+  }
+
   render() {
     let categoryClass = 'news-category ';
         categoryClass += 'category-' + this.props.category.toLowerCase();
@@ -30,6 +41,7 @@ export default class SingleNews extends React.Component {
       <span className={categoryClass}>{this.props.category}</span>
 
       <div className='news-img'>
+          {this.getImage()}
       </div>
 
       <header className='news-header'>

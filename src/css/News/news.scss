@@ -1,3 +1,13 @@
+.hotnews,
+.more-news {
+  @include row();
+  padding: 40px 0 30px 0;
+}
+
+.hotnews-primary {
+  border-bottom: 1px solid $border-color;
+}
+
 .news-content {
   @include column(12);
 
@@ -9,7 +19,7 @@
     @include column(4);
   }
 
-  margin-top: 135px;
+  margin-top: 105px;
 }
 
 .news-first {
@@ -84,4 +94,8 @@
 
 .news-img {
   margin-bottom: 40px;
+
+  img {
+    max-width: 100%;
+  }
 }

@@ -3,6 +3,7 @@
 
 .container {
   @include column(12);
+  float: none;
   display: block;
   max-width: 290px;
   margin: 0 auto;

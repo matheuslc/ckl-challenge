@@ -13,7 +13,10 @@ var staticData = [
                 "published_at": "1452821354",
                 "text": "In his last State of the Union address, President Obama sought to paint a hopeful portrait. But he acknowledged that many Americans felt shut out of a political and economic system they view as rigged.",
                 "category": "Politics",
-                "image": '/img/news_01.jpg',
+                "images": {
+                  "image": "news_01.jpg",
+                  "retina": "news_01@2x.png"
+                },
                 "author": {
                     "name": "Creed Bratton",
                     "image": "creed-bratton.jpg",
@@ -24,7 +27,10 @@ var staticData = [
                 "published_at": "1452821354",
                 "text": "One day after Uber updated its API to add ‘content experiences’ for passengers, the U.S. company’s biggest rival — Didi Kuaidi in China — has opened its own platform up by releasing an SDK for developers and third-parties.",
                 "category": "Tech",
-                "image": '/img/news_02.jpg',
+                "images": {
+                  "image": "news_02.jpg",
+                  "retina": "news_02@2x.jpg"
+                },
                 "author": {
                     "name": "Creed Bratton",
                     "image": "creed-bratton.jpg",
@@ -35,7 +41,10 @@ var staticData = [
                 "published_at": "1452821354",
                 "text": "Last week, NASA announced a new program called the Planetary Defense Coordination Office (PDCO) which will coordinate NASA’s efforts for detecting and tracking near-Earth objects (NEOs). If a large object comes hurtling toward our planet",
                 "category": "Science",
-                "image": '/img/news_03.jpg',
+                "images": {
+                  "image": "news_03.jpg",
+                  "retina": "news_03@2x.jpg"
+                },
                 "author": {
                     "name": "Alexandre Henrique Shailesh Zeta-Jones",
                     "image": "creed-bratton.jpg",
@@ -46,7 +55,10 @@ var staticData = [
                 "published_at": "1452821354",
                 "text": "The favored in-flight pastime of a group of players including Al Horford, Kent Bazemore and Dennis Schroder is a schoolchildren’s card game with some added twists.",
                 "category": "Sports",
-                "image": '/img/news_04.jpg',
+                "images": {
+                  "image": "",
+                  "retina": ""
+                },
                 "author": {
                     "name": "Creed Bratton",
                     "image": "creed-bratton.jpg",
@@ -57,7 +69,10 @@ var staticData = [
                 "published_at": "1452821354",
                 "text": "Oscar the Grouch has a recycling bin and Big Bird has moved to a tree as the children’s classic debuts on HBO, aiming at a generation that doesn’t distinguish between TV and mobile screens.",
                 "category": "Tech",
-                "image": '/img/news_05.jpg',
+                "images": {
+                  "image": "",
+                  "retina": ""
+                },
                 "author": {
                     "name": "Creed Bratton",
                     "image": "creed-bratton.jpg",
@@ -68,7 +83,10 @@ var staticData = [
                 "published_at": "1452821354",
                 "text": "The Energy Department and the Pentagon have been readying a weapon with a build-it-smaller approach, setting off a philosophical clash in the world of nuclear arms.",
                 "category": "Science",
-                "image": '/img/news_06.jpg',
+                "images": {
+                  "image": "",
+                  "retina": ""
+                },
                 "author": {
                     "name": "Creed Bratton",
                     "image": "creed-bratton.jpg",
