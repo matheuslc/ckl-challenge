@@ -14,9 +14,8 @@ export default class MainHeader extends React.Component {
     return <header className='main-header'>
       <div className='container'>
         <span className='menu-icon'>
-          <h1 className='logo'>
-            
-          </h1>
+            <Image alt='Your picture description'
+              srcSet={this.getImagesSrc('menu')} />
         </span>
 
         <h1 className='logo'>

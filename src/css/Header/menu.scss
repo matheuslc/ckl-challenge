@@ -5,16 +5,32 @@
   @include clearfix();
 }
 
+.menu-icon {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+
+  @include media-query($desktop-breakpoint, false) {
+    display: none;
+  }
+}
+
 .logo {
+  margin: 0 auto;
+  text-align: center;
+
   @include media-query($desktop-breakpoint, false) {
     @include column(3)
+    text-align: left;
+    padding: 0;
   }
 }
 
 .main-nav {
-  width: 97%;
+  width: 100%;
   position: absolute;
-  top: 45px;
+  top: 59px;
+  left: 0;
 
   @extend .main-nav-primary;
 
@@ -36,10 +52,22 @@
 
 .main-menu {
   padding: 35px 0;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: all .5s ease;
 
   @include media-query($desktop-breakpoint, false) {
     padding: 0;
+    visibility: visible;
+    height: auto;
   }
+}
+
+.is-open {
+  visibility: visible;
+  overflow: auto;
+  height: 382px;
 }
 
 .main-menu-item {

@@ -2,6 +2,15 @@
     @include column(12);
     position: relative;
     margin-bottom: 55px;
+
+    img {
+      width: 32px;
+      height: 32px;
+      margin-right: 15px;
+      display: inline-block;
+      border-radius: 50%;
+      overflow: hidden;
+    }
 }
 
 .author-name {
@@ -15,13 +24,4 @@
   font-family: $secondary-font;
   color: $author-color;
   font-style: italic;
-}
-
-.author-img {
-  width: 32px;
-  height: 32px;
-  margin-right: 15px;
-  display: inline-block;
-  border-radius: 50%;
-  overflow: hidden;
 }

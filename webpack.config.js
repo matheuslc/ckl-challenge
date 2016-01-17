@@ -20,10 +20,10 @@ module.exports = {
       }
     }, {
       test: /\.scss$/,
-      loaders: ["style", "css", "sass"]
+      loaders: ['style', 'css', 'sass']
     }, {
-      test: /\.(png|jpg)$/,
-      loader: 'url?limit=25000'
+      test: /\.(png|jpg|gif)$/,
+      loader: 'url-loader?limit=8192&name=img/[name].[ext]'
     }],
   },
 }

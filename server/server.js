@@ -19,7 +19,10 @@ var staticData = [
                 },
                 "author": {
                     "name": "Creed Bratton",
-                    "image": "creed-bratton.jpg",
+                    "images": {
+                        "image": "author.jpg",
+                        "retina": "author@2x.jpg"
+                    }
                 }
             }, {
                 "id": 1,
@@ -33,7 +36,10 @@ var staticData = [
                 },
                 "author": {
                     "name": "Creed Bratton",
-                    "image": "creed-bratton.jpg",
+                    "images": {
+                        "image": "author.jpg",
+                        "retina": "author@2x.jpg"
+                    }
                 }
             }, {
                 "id": 2,
@@ -47,7 +53,10 @@ var staticData = [
                 },
                 "author": {
                     "name": "Alexandre Henrique Shailesh Zeta-Jones",
-                    "image": "creed-bratton.jpg",
+                    "images": {
+                        "image": "author.jpg",
+                        "retina": "author@2x.jpg"
+                    }
                 }
             }, {
                 "id": 3,
@@ -61,7 +70,10 @@ var staticData = [
                 },
                 "author": {
                     "name": "Creed Bratton",
-                    "image": "creed-bratton.jpg",
+                    "images": {
+                        "image": "author.jpg",
+                        "retina": "author@2x.jpg"
+                    }
                 }
             }, {
                 "id": 4,
@@ -75,7 +87,10 @@ var staticData = [
                 },
                 "author": {
                     "name": "Creed Bratton",
-                    "image": "creed-bratton.jpg",
+                    "images": {
+                        "image": "author.jpg",
+                        "retina": "author@2x.jpg"
+                    }
                 }
             }, {
                 "id": 5,
@@ -89,7 +104,10 @@ var staticData = [
                 },
                 "author": {
                     "name": "Creed Bratton",
-                    "image": "creed-bratton.jpg",
+                    "images": {
+                        "image": "author.jpg",
+                        "retina": "author@2x.jpg"
+                    }
                 }
             }
         ];

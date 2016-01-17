@@ -22,11 +22,10 @@ export default class SingleNews extends React.Component {
   getImage() {
     if (this.props.images.image) {
       var image = require('../../../img/' + this.props.images.image);
-      let retina = require('../../../img/menu@2x.png');
+      let retina = require('../../../img/'+ this.props.images.retina);
 
-      return <Image alt='Your picture description'
-        srcSet={require('../../../img/' + this.props.images.image)}
-        extra={{className:'myImg'}}/>
+      return <Image alt={this.props.images.alt}
+        srcSet={require('../../../img/' + this.props.images.image)}/>
     }
   }
 
@@ -48,7 +47,7 @@ export default class SingleNews extends React.Component {
         <h1 className='news-title news-title-primary'>{this.props.title}</h1>
       </header>
 
-      <Author name={this.props.authorName} image={this.props.authorImg}></Author>
+      <Author name={this.props.authorName} images={this.props.authorImage}></Author>
 
       <div className='news-text news-text-primary'>
         <p>{this.props.text}</p>

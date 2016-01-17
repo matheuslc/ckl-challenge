@@ -16,7 +16,7 @@ export default class News extends React.Component {
                 text={news.text}
                 images={news.images}
                 authorName={news.author.name}
-                authorImage={news.author.image.small}
+                authorImage={news.author.images}
                 />
             );
         } else {
@@ -27,7 +27,7 @@ export default class News extends React.Component {
             text={news.text}
             images={news.images}
             authorName={news.author.name}
-            authorImage={news.author.image.small}
+            authorImage={news.author.images}
             />
           );
         }
