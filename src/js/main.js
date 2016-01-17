@@ -3,12 +3,26 @@ require('../css/main.scss');
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import fetch from 'isomorphic-fetch'
+import { polyfill } from 'es6-promise';
 import MainHeader from './UI/Header/mainHeader.jsx';
 import News from './UI/News/news.jsx';
 
-ReactDOM.render(
-  <div>
-    <MainHeader items={items} />
-    <News news={news} />
-  </div>, document.getElementById('wrapper')
-);
+polyfill();
+
+fetch('//localhost:3001/news')
+    .then(function(response) {
+        if (response.status >= 400) {
+            throw new Error("Bad response from server");
+        }
+
+        return response.json();
+    })
+    .then(function(news) {
+      ReactDOM.render(
+        <div>
+          <MainHeader items={[{}]} />
+          <News news={news} />
+        </div>, document.getElementById('wrapper')
+      );
+    });

@@ -1,8 +1,12 @@
 .author {
-    @include row();
+    @include column(12);
+    position: relative;
+    margin-bottom: 55px;
 }
 
 .author-name {
+  position: absolute;
+  top: 7px;
   font-size: 1.3rem;
   line-height: 22px;
 }
@@ -16,6 +20,7 @@
 .author-img {
   width: 32px;
   height: 32px;
+  margin-right: 15px;
   display: inline-block;
   border-radius: 50%;
   overflow: hidden;

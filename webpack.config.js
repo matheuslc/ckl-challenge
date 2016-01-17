@@ -6,7 +6,8 @@ module.exports = {
   entry: path.resolve(__dirname, 'src/js/main.js'),
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'app.js'
+    filename: 'app.js',
+    publicPath: 'dist/'
   },
   module: {
     loaders: [{
@@ -20,6 +21,9 @@ module.exports = {
     }, {
       test: /\.scss$/,
       loaders: ["style", "css", "sass"]
-    }]
-  }
+    }, {
+      test: /\.(png|jpg)$/,
+      loader: 'url?limit=25000'
+    }],
+  },
 }

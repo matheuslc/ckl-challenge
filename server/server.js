@@ -76,25 +76,35 @@ var staticData = [
             }
         ];
 
+app.get('/', function(req, res) {
+  res.send('Listening..');
+});
+
 app.get('/news', function(req, res) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+
   if (req.query.timeout) {
     setTimeout(function() {
-      res.send(staticData);
+      res.json(staticData);
     }, req.query.timeout);
   } else {
-    res.send(staticData);
+    res.json(staticData);
   }
 });
 
 app.get('/news/:news', function(req, res) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+
   if (req.query.timeout) {
     setTimeout(function() {
-      res.send(staticData.filter(function(news) {
+      res.json(staticData.filter(function(news) {
         return news.id = req.params.news;
       }));
     }, req.query.timeout);
   } else {
-    res.send(staticData.filter(function(news) {
+    res.json(staticData.filter(function(news) {
       return news.id = req.params.news;
     }));
   }

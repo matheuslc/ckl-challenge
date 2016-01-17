@@ -8,6 +8,8 @@
   @include media-query($mobile-breakpoint, false) {
     @include column(4);
   }
+
+  margin-top: 135px;
 }
 
 .news-first {
@@ -35,6 +37,8 @@
   font-size: 1.7rem;
   line-height: 21px;
   font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 35px;
 
   @include media-query($mobile-breakpoint, false) {
     font-size: 29px;
@@ -55,9 +59,11 @@
   color: $news-text-color;
 }
 
-.category {
+.news-category {
+  margin-bottom: 20px;
   font-size: 1rem;
   line-height: 22.8px;
+  text-transform: uppercase;
 }
 
 .category-politics {
@@ -74,4 +80,8 @@
 
 .category-sports {
   color: $category-sports-color;
+}
+
+.news-img {
+  margin-bottom: 40px;
 }
