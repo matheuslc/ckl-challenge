@@ -4,7 +4,7 @@
   "description": "An awesome news page",
   "main": "index.js",
   "scripts": {
-    "postinstall": "cd node_modules && cd react-route && npm install",
+    "postinstall": "cd node_modules/react-router; npm install; cp ../../src/index.html ../../dist/index.html",
     "build": "webpack",
     "dev": "webpack-dev-server --progress --colors --content-base dist/",
     "dev-vagrant": "webpack-dev-server --devtool eval --progress --colors --content-base dist/ --port 3001 --host 0.0.0.0"

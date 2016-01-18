@@ -3,10 +3,7 @@ var webpack = require('webpack');
 
 module.exports = {
   devtool: 'source-map',
-  entry: {
-    app: path.resolve(__dirname, 'src/js/main.js'),
-    vendors: ['react', 'react-router']
-  },
+  entry: path.resolve(__dirname, 'src/js/main.js'),
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'app.js',
@@ -15,7 +12,7 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.jsx?$/,
-      exclude: path.resolve(__dirname, 'app/main.js'),
+      exclude: /(node_modules)/,
       loader: 'babel',
       query: {
         cacheDirectory: true,
@@ -29,4 +26,7 @@ module.exports = {
       loader: 'url-loader?limit=8192&name=img/[name].[ext]'
     }],
   },
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin('vendor', 'vendors.js')
+  ]
 }
