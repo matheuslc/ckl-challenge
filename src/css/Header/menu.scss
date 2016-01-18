@@ -77,6 +77,8 @@
 .main-menu-item {
   display: block;
   padding: 31px 25px;
+  text-align: left;
+  text-transform: uppercase;
 
   @extend .main-menu-item-primary;
 
@@ -85,14 +87,11 @@
     padding: 23px 29px 0 0;
     margin-top: -8px;
   }
+}
 
+.main-menu-item-primary {
   a {
     text-decoration: none;
     color: $menu-item-color;
   }
-}
-
-.main-menu-item-primary {
-  text-align: center;
-  text-transform: uppercase;
 }
