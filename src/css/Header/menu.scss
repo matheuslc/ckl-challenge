@@ -9,6 +9,7 @@
   position: absolute;
   left: 10px;
   top: 10px;
+  cursor: pointer;
 
   @include media-query($desktop-breakpoint, false) {
     display: none;
@@ -66,6 +67,7 @@
 
 .is-open {
   height: auto;
+  z-index: 10;
 
   .main-menu {
     visibility: visible;

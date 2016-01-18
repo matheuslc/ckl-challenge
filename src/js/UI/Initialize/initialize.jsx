@@ -64,7 +64,7 @@ export default class Initialize extends React.Component {
       data: null
     });
 
-    this.getData(e.params.category, 3000);
+    this.getData(e.params.category, e.params.timeout);
   }
 
   componentDidMount() {

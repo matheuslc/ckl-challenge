@@ -1,4 +1,5 @@
 var express = require('express');
+var path = require('path');
 var bodyParser = require('body-parser');
 var argv = require('yargs').argv;
 var app = express();
@@ -80,7 +81,7 @@ var staticData = [
                 "title": "Picking a Windows 10 Security Package",
                 "published_at": "1452821354",
                 "text": "Oscar the Grouch has a recycling bin and Big Bird has moved to a tree as the children’s classic debuts on HBO, aiming at a generation that doesn’t distinguish between TV and mobile screens.",
-                "category": "Tech",
+                "category": "Business",
                 "images": {
                   "image": "",
                   "retina": ""
@@ -112,8 +113,11 @@ var staticData = [
             }
         ];
 
+app.use('/', express.static('dist'));
+app.use('/dist', express.static('dist'));
+
 app.get('/', function(req, res) {
-  res.send('Listening..');
+  res.sendFile(path.resolve('dist/index.html'));
 });
 
 app.get('/news', function(req, res) {

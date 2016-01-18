@@ -7,7 +7,7 @@ import Initialize from './UI/Initialize/initialize.jsx'
 const routes = (
   <Route>
     <Route path='/' component={Initialize} />
-    <Route path='/category/:category' component={Initialize} />
+    <Route path='/category/:category(/:timeout)' component={Initialize} />
   </Route>
 )
 
