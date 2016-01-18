@@ -4,8 +4,7 @@ var webpack = require('webpack');
 module.exports = {
   devtool: 'source-map',
   entry: {
-    app: path.resolve(__dirname, 'src/js/main.js'),
-    vendors: ['react', 'react-router']
+    app: path.resolve(__dirname, 'src/js/main.js')
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
