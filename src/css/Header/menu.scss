@@ -17,7 +17,7 @@
 
 .logo {
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
 
   @include media-query($desktop-breakpoint, false) {
     @include column(3)

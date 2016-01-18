@@ -21,11 +21,13 @@ export default class SingleNews extends React.Component {
 
   getImage() {
     if (this.props.images.image) {
-      var image = require('../../../img/' + this.props.images.image);
+      let image = require('../../../img/' + this.props.images.image);
       let retina = require('../../../img/'+ this.props.images.retina);
 
+      let path = `${image} 1x, ${retina} 2x`;
+
       return <Image alt={this.props.images.alt}
-        srcSet={require('../../../img/' + this.props.images.image)}/>
+        srcSet={path}/>
     }
   }
 

@@ -10,7 +10,16 @@
 @import 'News/author.scss';
 
 html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
   font-size: 10px;
+  font-weight: 400;
 }
 
 body {
