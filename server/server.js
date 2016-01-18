@@ -120,30 +120,20 @@ app.get('/news', function(req, res) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
 
-  if (req.query.timeout) {
-    setTimeout(function() {
-      res.json(staticData);
-    }, req.query.timeout);
-  } else {
+  setTimeout(function() {
     res.json(staticData);
-  }
+  }, req.query.timeout);
 });
 
-app.get('/news/:news', function(req, res) {
+app.get('/news/:category', function(req, res) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
 
-  if (req.query.timeout) {
-    setTimeout(function() {
-      res.json(staticData.filter(function(news) {
-        return news.id = req.params.news;
-      }));
-    }, req.query.timeout);
-  } else {
+  setTimeout(function() {
     res.json(staticData.filter(function(news) {
-      return news.id = req.params.news;
+      return news.category.toLowerCase() == req.params.category;
     }));
-  }
+  }, req.query.timeout);
 });
 
 app.listen(argv.port, function() {

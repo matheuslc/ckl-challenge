@@ -4,6 +4,7 @@
   "description": "An awesome news page",
   "main": "index.js",
   "scripts": {
+    "postinstall": "cd node_modules && cd react-route && npm install",
     "build": "webpack",
     "dev": "webpack-dev-server --progress --colors --content-base dist/",
     "dev-vagrant": "webpack-dev-server --devtool eval --progress --colors --content-base dist/ --port 3001 --host 0.0.0.0"
@@ -23,7 +24,6 @@
     "babel-loader": "^6.2.1",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
-    "body-parser": "^1.14.2",
     "css-loader": "^0.23.1",
     "file-loader": "^0.8.5",
     "image-webpack-loader": "^1.6.3",
@@ -37,14 +37,15 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "body-parser": "^1.14.2",
     "classnames": "^2.2.3",
-    "react": "^0.14.6",
     "es6-promise": "^3.0.2",
-    "react-dom": "^0.14.6",
     "express": "^4.13.3",
-    "extract-text-webpack-plugin": "^1.0.1",
     "isomorphic-fetch": "^2.2.1",
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6",
     "react-picture": "0.0.4",
+    "react-router": "^1.0.3",
     "yargs": "^3.32.0"
   }
 }
