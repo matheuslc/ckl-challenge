@@ -19,15 +19,20 @@ export default class SingleNews extends React.Component {
       }
   }
 
-  getImage() {
+  getImage(newsId) {
     if (this.props.images.image) {
       let image = require('../../../img/' + this.props.images.image);
       let retina = require('../../../img/'+ this.props.images.retina);
 
       let path = `${image} 1x, ${retina} 2x`;
 
-      return <Image alt={this.props.images.alt}
-        srcSet={path}/>
+      return <div className='news-img'>
+        <a href={newsId} className='read-more'>Read More</a>
+
+        <Image alt={this.props.images.alt}
+          srcSet={path}/>
+      </div>
+
     }
   }
 
@@ -41,9 +46,7 @@ export default class SingleNews extends React.Component {
     return <article className={news}>
       <span className={categoryClass}>{this.props.category}</span>
 
-      <div className='news-img'>
-          {this.getImage()}
-      </div>
+        {this.getImage(this.props.id)}
 
       <header className='news-header'>
         <h1 className='news-title news-title-primary'>{this.props.title}</h1>

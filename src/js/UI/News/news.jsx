@@ -14,6 +14,7 @@ export default class News extends React.Component {
                 category={news.category}
                 title={news.title}
                 text={news.text}
+                id={news.id}
                 images={news.images}
                 authorName={news.author.name}
                 authorImage={news.author.images}
@@ -25,6 +26,7 @@ export default class News extends React.Component {
             category={news.category}
             title={news.title}
             text={news.text}
+            id={news.id}
             images={news.images}
             authorName={news.author.name}
             authorImage={news.author.images}
