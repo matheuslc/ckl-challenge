@@ -1,14 +1,14 @@
 .main-header {
   position: relative;
-  padding: 7px 0 4px;
+  padding: 5px 0 4px;
   border-bottom: 1px solid $border-color;
   @include clearfix();
 }
 
 .menu-icon {
   position: absolute;
-  left: 10px;
-  top: 10px;
+  left: 12px;
+  top: 19px;
   cursor: pointer;
 
   @include media-query($desktop-breakpoint, false) {
@@ -33,7 +33,6 @@
   position: absolute;
   top: 59px;
   left: 0;
-  transition: height .5s ease;
 
   @extend .main-nav-primary;
 
@@ -47,6 +46,7 @@
 
 .main-nav-primary {
   background-color: $menu-bg;
+  transition: height .5s ease;
 
   @include media-query($desktop-breakpoint, false) {
     text-align: right;
@@ -80,55 +80,63 @@
 .main-menu-item {
   display: block;
   padding: 31px 25px;
-  text-align: left;
-  text-transform: uppercase;
+
 
   @extend .main-menu-item-primary;
 
   @include media-query($desktop-breakpoint, false) {
     display: inline-block;
-    padding: 23px 29px 0 0;
+    padding: 23px 17px 0 15px;
     margin-top: -8px;
   }
 
   a {
-    position: relative;
-
-    &:hover {
-      &:before,
-      &:after {
-        transition: all 0.2s;
-        opacity: 1;
-      }
-
-      &:before {
-        left: -10px;
-      }
-
-      &:after {
-        right: -10px;
-      }
-    }
-
-    &:before {
-      position: absolute;
-      content: '[';
-      opacity: 0;
-      left: 5px;
-    }
-
-    &:after {
-      position: absolute;
-      content: ']';
-      opacity: 0;
-      right: 5px;
-    }
+    @extend .bracks-effect;
   }
 }
 
 .main-menu-item-primary {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  line-height: 17px;
+
   a {
     text-decoration: none;
     color: $menu-item-color;
+  }
+}
+
+.bracks-effect {
+  position: relative;
+
+  &:hover {
+    &:before,
+    &:after {
+      transition: all 0.2s;
+      opacity: 1;
+    }
+
+    &:before {
+      left: -10px;
+    }
+
+    &:after {
+      right: -10px;
+    }
+  }
+
+  &:before {
+    position: absolute;
+    content: '[';
+    opacity: 0;
+    left: 5px;
+  }
+
+  &:after {
+    position: absolute;
+    content: ']';
+    opacity: 0;
+    right: 5px;
   }
 }

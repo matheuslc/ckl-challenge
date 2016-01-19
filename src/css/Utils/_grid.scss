@@ -2,14 +2,16 @@
 @import './_variables.scss';
 
 .container {
-  @include column(12);
+  @include clearfix();
+  width: 100%;
   float: none;
   display: block;
-  max-width: 290px;
+  max-width: 760px;
   margin: 0 auto;
 
-  @include media-query($mobile-sm-breakpoint, false) {
-    max-width: 720px;
+  @include media-query($mobile-breakpoint, false) {
+    max-width: 750px;
+    padding: 0 15px;
   }
 
   @include media-query($desktop-breakpoint, false) {
