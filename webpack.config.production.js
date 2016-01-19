@@ -23,7 +23,7 @@ module.exports = {
       loaders: ['style', 'css', 'sass']
     }, {
       test: /\.(png|jpg|gif)$/,
-      loader: 'url-loader?limit=8192&name=img/[name].[ext]'
+      loader: 'url-loader?limit=1&name=img/[name].[ext]'
     }],
   },
   plugins: [

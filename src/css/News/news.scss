@@ -88,17 +88,19 @@
 .news-first {
   @include column(12);
 
+  @include media-query($mobile-sm-breakpoint, false) {
+    .news-title {
+      font-size: 2.9rem;
+      line-height: 33px;
+      margin-bottom: 20px;
+    }
+  }
+
   @include media-query($mobile-breakpoint, false) {
     @include column(6);
 
     .news-text {
       display: none;
-    }
-
-    .news-title {
-      font-size: 2.9rem;
-      line-height: 33px;
-      margin-bottom: 20px;
     }
   }
 }
