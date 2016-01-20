@@ -45,6 +45,8 @@ export default class Initialize extends React.Component {
 
     if (category) {
         url = `${url}/${category}?timeout=${timeout}`;
+    } else {
+      url = `${url}?timeout=${timeout}`;
     }
 
     fetch(url)
