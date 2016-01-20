@@ -27,9 +27,9 @@ export default class SingleNews extends React.Component {
       let path = `${image} 1x, ${retina} 2x`;
 
       return <div className='news-img'>
-        <a href={newsId} className='read-more'>Read More</a>
+        <a href='#' className='read-more'>Read More</a>
 
-        <Image alt={this.props.images.alt}
+        <Image alt={this.props.title}
           srcSet={path}/>
       </div>
 

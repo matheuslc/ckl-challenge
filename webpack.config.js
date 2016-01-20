@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var autoprefixer = require('autoprefixer')
 
 module.exports = {
   devtool: 'source-map',
@@ -23,13 +24,19 @@ module.exports = {
       }
     }, {
       test: /\.scss$/,
-      loaders: ['style', 'css', 'sass']
+      loader: 'style!css!sass!postcss-loader'
     }, {
       test: /\.(png|jpg|gif)$/,
       loader: 'url-loader?limit=1&name=img/[name].[ext]'
     }],
   },
+  postcss: [autoprefixer({
+    browsers: ['last 2 versions']
+  })],
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js', 2)
+    new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js', 2),
+    new webpack.DefinePlugin({
+      __BASEURL__: JSON.stringify(process.env.BASEURL || '//localhost:8080')
+    })
   ]
 }

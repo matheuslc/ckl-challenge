@@ -43,6 +43,10 @@
   @include column(12);
   margin-bottom: 60px;
 
+  &:hover .read-more {
+    visibility: visible;;
+  }
+
   @include media-query($mobile-breakpoint, false) {
     @include column(6);
   }
@@ -166,10 +170,13 @@
 
 .news-img {
   position: relative;
+  z-index: 9;
   margin-bottom: 15px;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
+
+  &:hover .read-more {
+    visibility: visible;
+  }
 
   @include media-query($mobile-breakpoint, false) {
     margin-bottom: 19px;
@@ -177,16 +184,16 @@
 
   img {
     max-width: 100%;
-    transition: all .2s ease-in-out;
+  }
 
-    &:hover {
-      transform: scale(1.01);
-    }
+  img:hover .read-more {
+    visibility: visible;
   }
 }
 
 .read-more {
   display: inline-block;
+  visibility: hidden;
   max-width: 110px;
   position: absolute;;
   left: 0;

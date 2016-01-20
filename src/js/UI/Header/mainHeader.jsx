@@ -36,9 +36,11 @@ export default class MainHeader extends React.Component {
         </span>
 
         <h1 className='logo'>
-          <Image alt='Cheescake news'
-            srcSet={this.getImagesSrc('logo')} />
-        </h1>
+          <a href={__BASEURL__}>
+            <Image alt='Cheescake news'
+              srcSet={this.getImagesSrc('logo')} />
+          </a>
+      </h1>
 
         <Menu items={this.props.items} isOpen={this.state.open} />
 

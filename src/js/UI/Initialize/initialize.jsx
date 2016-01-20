@@ -24,6 +24,9 @@ let menuItems = [
   }, {
     name: 'Science',
     target: '#category/science'
+  }, {
+    name: 'Sports',
+    target: '#category/sports'
   }
 ]
 
@@ -38,7 +41,7 @@ export default class Initialize extends React.Component {
   }
 
   getData(category = '', timeout = 0) {
-    let url = '//localhost:3001/news';
+    let url = __BASEURL__ + '/news';
 
     if (category) {
         url = `${url}/${category}?timeout=${timeout}`;

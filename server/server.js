@@ -140,6 +140,6 @@ app.get('/news/:category', function(req, res) {
   }, req.query.timeout);
 });
 
-app.listen(3001, function() {
+app.listen(8080, function() {
   console.log('Pull the anchor, we\'re leaving !');
 });
