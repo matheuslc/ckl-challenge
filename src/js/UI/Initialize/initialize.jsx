@@ -40,7 +40,7 @@ export default class Initialize extends React.Component {
     }
   }
 
-  getData(category = '', timeout = 0) {
+  getData(category = '', timeout = 3000) {
     let url = __BASEURL__ + '/news';
 
     if (category) {
