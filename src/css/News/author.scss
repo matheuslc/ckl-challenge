@@ -1,0 +1,28 @@
+.author {
+    @include column(12);
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 0;
+
+    img {
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+      display: inline-block;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+}
+
+.author-name {
+  position: relative;
+  top: -10px;
+}
+
+.author-name-primary {
+  font-size: 1.3rem;
+  line-height: 22px;
+  font-family: $secondary-font;
+  color: $author-color;
+  font-style: italic;
+}

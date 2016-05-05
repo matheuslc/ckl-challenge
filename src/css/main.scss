@@ -1,0 +1,32 @@
+@import 'Utils/_variables.scss';
+@import 'Utils/_reset.scss';
+@import 'Grid/_semanticgs.scss';
+@import 'Utils/_mediaQueries.scss';
+@import 'Utils/_grid.scss';
+@import 'Utils/_loader.scss';
+
+@import 'Header/menu.scss';
+
+@import 'News/news.scss';
+@import 'News/author.scss';
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  background-color: $bg;
+  font-size: 1.6rem;
+  font-family: $default-font;
+}

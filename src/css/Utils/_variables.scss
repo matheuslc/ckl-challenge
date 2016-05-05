@@ -1,0 +1,55 @@
+// Defing variables
+$mobile-breakpoint: 360px;
+$desktop-breakpoint: 750px;
+
+// Grid System
+$column-width: 60;
+$gutter-width: 20;
+$columns: 12;
+$total-width: 100%;
+
+///////////////////////////////////
+// Colors variables
+//////////////////////////////////
+$bg: #FFFFFF;
+
+// Menu Colors
+$menu-bg: #FFFFFF;
+$menu-item-color: #3E433E;
+
+// News colors
+$news-title-color: #000000;
+$news-text-color: #686868;
+$category-politics-color: #FF001F;
+$category-tech-color: #4A90E2;
+$category-science-color: #7CBB37;
+$category-sports-color: #F5A623;
+$read-more-color: rgba(0, 0, 0, .5);
+$read-more-text-color: #FFF;
+$read-more-border-color: #FFF;
+
+$border-color: #979797;
+
+// Author Colors
+$author-color: #808080;
+
+//Loader color
+$loader-color: #333;
+
+///////////////////////////////////
+// Typography variables
+//////////////////////////////////
+$secondary-font: 'Open Sans', sans-serif;
+$primary-font: 'Lato', sans-serif;
+$default-font: $primary-font;
+
+// Menu Typography
+$menu-font: $primary-font;
+
+// News Typography
+$category-font: $primary-font;
+$news-title-font: $primary-font;
+$news-text-font: $secondary-font;
+
+// Author Typography
+$author-font: $secondary-font;
